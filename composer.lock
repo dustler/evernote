@@ -138,12 +138,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vasiliy-t/worker-application.git",
-                "reference": "3f7bcb83f3f8267acab1065f8fb4ee5e99351c75"
+                "reference": "c280de8c04441d5a82b66817ccba5b1d2da491c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vasiliy-t/worker-application/zipball/3f7bcb83f3f8267acab1065f8fb4ee5e99351c75",
-                "reference": "3f7bcb83f3f8267acab1065f8fb4ee5e99351c75",
+                "url": "https://api.github.com/repos/vasiliy-t/worker-application/zipball/c280de8c04441d5a82b66817ccba5b1d2da491c5",
+                "reference": "c280de8c04441d5a82b66817ccba5b1d2da491c5",
                 "shasum": ""
             },
             "require": {
@@ -164,7 +164,7 @@
                 "source": "https://github.com/vasiliy-t/worker-application/tree/master",
                 "issues": "https://github.com/vasiliy-t/worker-application/issues"
             },
-            "time": "2014-05-16 08:48:40"
+            "time": "2014-05-16 11:57:54"
         }
     ],
     "packages-dev": [
