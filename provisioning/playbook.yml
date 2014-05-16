@@ -1,5 +1,15 @@
 ---
-- hosts: all
+- hosts: evernote
+  sudo: True
   tasks:
+  - name: Install EPEL Release repo
+    yum: name=http://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/epel-release-6-5.noarch.rpm state=present
+
   - name: Install IUS repo
     yum: name=http://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/ius-release-1.0-11.ius.centos6.noarch.rpm state=present
+
+  - name: Install PHP 5.5
+    yum: name=php55u state=present
+
+  - name: Install PHP 5.5 Intl
+    yum: name=php55u-intl state=present
