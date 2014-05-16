@@ -1,0 +1,23 @@
+{
+    "name": "Evernote/Reader",
+    "description": "Evernote Reader Service",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Vasiliy Tyubek",
+            "email": "v.tyubek@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": ["vendor/"]
+    },
+    "require": {
+        "evernote/evernote": "1.25.0",
+        "silex/silex": "v1.2.0"
+    },
+    "require-dev": {
+        "phpunit/dbunit": "1.3.0",
+        "phpunit/phpunit": "3.7.28",
+        "fzaninotto/faker": "1.3.0"
+    }
+}
