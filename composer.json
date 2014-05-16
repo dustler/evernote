@@ -1,6 +1,6 @@
 {
-    "name": "Evernote/Reader",
-    "description": "Evernote Reader Service",
+    "name": "dustler/evernote",
+    "description": "Evernote reader/writer Service",
     "minimum-stability": "stable",
     "authors": [
         {
