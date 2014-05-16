@@ -13,11 +13,18 @@
     },
     "require": {
         "evernote/evernote": "1.25.0",
-        "silex/silex": "v1.2.0"
+        //"silex/silex": "v2.0.x-dev"
+        "vt/worker": "dev-master"
     },
     "require-dev": {
         "phpunit/dbunit": "1.3.0",
         "phpunit/phpunit": "3.7.28",
         "fzaninotto/faker": "1.3.0"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:vasiliy-t/worker-application.git"
+        }
+    ]
 }
