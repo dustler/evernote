@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "34e25e27639513b5ad61ebd10bb61888",
+    "hash": "34c0cc89df9f33515dc34bd2986af6c1",
     "packages": [
         {
             "name": "evernote/evernote",
@@ -94,6 +94,43 @@
                 "dependency injection"
             ],
             "time": "2014-02-10 08:05:32"
+        },
+        {
+            "name": "vt/evernote-service-provider",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vasiliy-t/evernote-service-provide.git",
+                "reference": "2437cd23fe0f5376c033adb38128c5120e7eb4f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vasiliy-t/evernote-service-provide/zipball/2437cd23fe0f5376c033adb38128c5120e7eb4f1",
+                "reference": "2437cd23fe0f5376c033adb38128c5120e7eb4f1",
+                "shasum": ""
+            },
+            "require": {
+                "evernote/evernote": "1.25.0"
+            },
+            "require-dev": {
+                "vt/worker": "dev-master"
+            },
+            "type": "library",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "author's name",
+                    "email": "email@example.com"
+                }
+            ],
+            "description": "description_text",
+            "support": {
+                "source": "https://github.com/vasiliy-t/evernote-service-provide/tree/master",
+                "issues": "https://github.com/vasiliy-t/evernote-service-provide/issues"
+            },
+            "time": "2014-05-16 11:06:48"
         },
         {
             "name": "vt/worker",
@@ -658,7 +695,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "vt/worker": 20
+        "vt/worker": 20,
+        "vt/evernote-service-provider": 20
     },
     "platform": [
 

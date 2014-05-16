@@ -2,17 +2,10 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use EDAM\Types\Data, EDAM\Types\Note, EDAM\Types\Resource, EDAM\Types\ResourceAttributes;
-use EDAM\Error\EDAMUserException, EDAM\Error\EDAMErrorCode;
-use EDAM\NoteStore\NoteFilter;
-use Evernote\Client;
+$application = new VT\Worker\Application();
+$application->register(new \VT\Provider\EvernoteServiceProvider());
 
-$app = new Silex\Application();
-
-require_once __DIR__ . '/../resources/config/prod.php';
-require_once __DIR__ . '/../resources/config/common.php';
-
-$channel = new AMQPChannel($app['amqp.connection']);
+/*$channel = new AMQPChannel($app['amqp.connection']);
 
 $queue = new AMQPQueue($channel);
 $queue->setName('evernote');
@@ -44,4 +37,4 @@ $queue->consume(function ($message, $queue) use (&$app) {
         var_dump($e);
     }
     $queue->ack($message->getDeliveryTag());
-});
+});*/

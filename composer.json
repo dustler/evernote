@@ -14,7 +14,8 @@
     "require": {
         "evernote/evernote": "1.25.0",
         //"silex/silex": "v2.0.x-dev"
-        "vt/worker": "dev-master"
+        "vt/worker": "dev-master",
+        "vt/evernote-service-provider": "dev-master"
     },
     "require-dev": {
         "phpunit/dbunit": "1.3.0",
@@ -25,6 +26,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:vasiliy-t/worker-application.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:vasiliy-t/evernote-service-provide.git"
         }
     ]
 }
