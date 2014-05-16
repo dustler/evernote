@@ -9,7 +9,7 @@
         }
     ],
     "autoload": {
-        "classmap": ["vendor/"]
+        "classmap": ["vendor/", "src/Dustler"]
     },
     "require": {
         "evernote/evernote": "1.25.0",

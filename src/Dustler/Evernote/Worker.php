@@ -23,12 +23,12 @@ class Worker implements WorkerInterface
      */
     public function handle()
     {
-        $connection = new AMQPConnection();
+        $connection = new \AMQPConnection($this->application['amqp.options']);
         $connection->connect();
 
-        $channel = new AMQPChannel($connection);
+        $channel = new \AMQPChannel($connection);
 
-        $queue = new AMQPQueue($channel);
+        $queue = new \AMQPQueue($channel);
         $queue->setName('evernote');
         $queue->setFlags(AMQP_DURABLE);
         $queue->declareQueue();

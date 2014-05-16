@@ -2,11 +2,13 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$application = new VT\Worker\Application();
+$app = new VT\Worker\Application();
 
-$application->register(new \VT\Provider\EvernoteServiceProvider());
+require_once __DIR__ . '/../resources/config/prod.php';
 
-$application['handler'] = function ($app) {
-    return new Dustler\Evernote\Worker($app);
+$app->register(new \VT\Provider\EvernoteServiceProvider());
+$app['evernote.client.options'] = array();
+$app['handler'] = function ($a) {
+    return new Dustler\Evernote\Worker($a);
 };
-$application->run();
+$app->run();

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "34c0cc89df9f33515dc34bd2986af6c1",
+    "hash": "1747014d3aa95489e414bd6c10cf15ef",
     "packages": [
         {
             "name": "evernote/evernote",

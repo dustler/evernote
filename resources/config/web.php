@@ -1,7 +1,7 @@
 <?php
 
 $app['amqp.connection'] = $app->share(function ($app) {
-    $connection = new AMQPConnection();
+    $connection = new AMQPConnection($app['amqp.options']);
     $connection->connect();
 
     return $connection;
@@ -15,14 +15,4 @@ $app['amqp.exchange'] = $app->share(function ($app) {
     $exchange->setFlags(AMQP_DURABLE);
 
     return $exchange;
-});
-
-$app['evernote.client'] = $app->share(function ($app) {
-    return new Evernote\Client(array(
-        'token' => ''
-    ));
-});
-
-$app['evernote.note_store'] = $app->share(function ($app) {
-    return $app['evernote.client']->getNoteStore();
 });
